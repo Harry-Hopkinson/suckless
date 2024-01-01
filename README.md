@@ -1,4 +1,4 @@
-# Suckless Window Managers
+# Suckless Window Manager setup with DMenu, DWM and ST
 
 ## Usage
 
