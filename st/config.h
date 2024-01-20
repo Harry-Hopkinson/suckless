@@ -5,8 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack:pixelsize=16:antialias=true:autohint=true";
-static char *font2[] = { "Apple Color Emoji:pixelsize=13:antialias=true:autohint=true", "OldHungarian:pixelsize=16", "JetBrainsMono Nerd Font :pixelsize=17:antialias=true:autohint=true" };
+static char *font = "Hack:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { 
+    "JoyPixels:pixelsize=14:antialias=true:autohint=true",
+};
 static int borderpx = 2;
 
 /*
@@ -120,30 +122,34 @@ float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
+/* Doom Emac Colour Theme */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#2b303b", /* black   */
-  [1] = "#bf616a", /* red     */
-  [2] = "#a3be8c", /* green   */
-  [3] = "#ebcb8b", /* yellow  */
-  [4] = "#8fa1b3", /* blue    */
-  [5] = "#b48ead", /* magenta */
-  [6] = "#96b5b4", /* cyan    */
-  [7] = "#c0c5ce", /* white   */
+  "#1c1f24",
+  "#ff6c6b",
+  "#98be65",
+  "#da8548",
+  "#51afef",
+  "#c678dd",
+  "#5699af",
+  "#202328",
 
   /* 8 bright colors */
-  [8]  = "#65737e", /* black   */
-  [9]  = "#bf616a", /* red     */
-  [10] = "#a3be8c", /* green   */
-  [11] = "#ebcb8b", /* yellow  */
-  [12] = "#8fa1b3", /* blue    */
-  [13] = "#b48ead", /* magenta */
-  [14] = "#96b5b4", /* cyan    */
-  [15] = "#eff1f5", /* white   */
+  "#5b6268",
+  "#da8548",
+  "#4db5bd",
+  "#ecbe7b",
+  "#3071db",
+  "#a9a1e1",
+  "#46d9ff",
+  "#dfdfdf",
 
-  /* special colors */
-  [256] = "#2b303b", /* background */
-  [257] = "#c0c5ce", /* foreground */		
+  [255] = 0,
+
+  /* more colors can be added after 255 to use with DefaultXX */
+  "#282c34",
+  "#bbc2cf",
+  "#d7d7d7",
 };
 
 
@@ -166,44 +172,6 @@ unsigned int background = 256;
 static unsigned int defaultitalic = 7;
 static unsigned int defaultunderline = 7;
 
-/* ###
-Terminal colors (16 first used in escape sequence)
-static const char *colorname[] = {
-	"#282828", hard contrast: #1d2021 / soft contrast: #32302f
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
-	[255] = 0,
-	more colors can be added after 255 to use with DefaultXX 
-	"#add8e6", 256 -> cursor 
-	"#555555", 257 -> rev cursor
-	"#282828", 258 -> bg 
-	"#ebdbb2", 259 -> fg 
-};
-
-
-
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- 
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-unsigned int defaultcs = 256;
-unsigned int defaultrcs = 257;
-unsigned int background = 258;
-*/
 /*
  * Default shape of cursor
  * 2: Block ("█")
