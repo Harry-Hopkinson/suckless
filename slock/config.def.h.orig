@@ -1,0 +1,18 @@
+/* user and group to drop privileges to */
+static const char *user  = "nobody";
+static const char *group = "nobody";
+
+static const char *colorname[NUMCOLS] = {
+	[INIT] =   "#1a1b26",     /* after initialization */
+	[INPUT] =  "#444b6a",   /* during input */
+	[FAILED] = "#f7769e",   /* wrong password */
+};
+
+/* treat a cleared input like a wrong password (color) */
+static const int failonclear = 1;
+
+/* Background image path, should be available to the user above */
+static const char* background_image = "";
+
+/* Background image path, should be available to the user above */
+static const char* background_image = "";
