@@ -125,24 +125,24 @@ float alphaUnfocus;
 /* Doom Emac Colour Theme */
 static const char *colorname[] = {
   /* 8 normal colors */
-  "#282828",
-  "#cc241d",
-  "#98971a",
-  "#d79921",
-  "#458588",
-  "#b16286",
-  "#689d6a",
-  "#a89984",
+  "#1c1f24",
+  "#ff6c6b",
+  "#98be65",
+  "#da8548",
+  "#51afef",
+  "#c678dd",
+  "#5699af",
+  "#202328",
 
   /* 8 bright colors */
-  "#928374",
-  "#fb4934",
-  "#b8bb26",
-  "#fabd2f",
-  "#83a598",
-  "#d3869b",
-  "#8ec07c",
-  "#ebdbb2",
+  "#5b6268",
+  "#da8548",
+  "#4db5bd",
+  "#ecbe7b",
+  "#3071db",
+  "#a9a1e1",
+  "#46d9ff",
+  "#dfdfdf",
 
   [255] = 0,
 
@@ -158,9 +158,9 @@ static const char *colorname[] = {
  * foreground, background, cursor
  */
 
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
 unsigned int defaultrcs = 257;
 unsigned int background = 256;
 
