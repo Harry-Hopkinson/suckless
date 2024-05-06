@@ -14,9 +14,9 @@ static const char *colors[SchemeLast][2] = {
 //	[SchemeSel] = { "#E5E9F0", "#88C0D0" },
 //	[SchemeOut] = { "#000000", "#00ffff" },
 	
-	[SchemeNorm] = { "#f1be9b", "#020914" },
-	[SchemeSel] = { "#f1be9b", "#565879"},
-	[SchemeOut] = { "#f1be9b", "#DA6748" },
+	[SchemeNorm] = { "#ebdbb2", "#282828" },
+	[SchemeSel] = { "#ebdbb2", "#98971a" },
+	[SchemeOut] = { "#ebdbb2", "#8ec07c" }
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 10;
@@ -29,4 +29,4 @@ static unsigned int columns    = 1;
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 0;
+static const unsigned int border_width = 2;

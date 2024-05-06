@@ -122,7 +122,6 @@ float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
-/* Doom Emac Colour Theme */
 static const char *colorname[] = {
   /* 8 normal colors */
   "#282828",
